@@ -12,10 +12,10 @@ document.addEventListener('keydown', changeDirection);
 
 function changeDirection(event) {
     const key = event.key;
-    if (key === 'ArrowUp' && direction !== 'down') direction = 'up';
-    if (key === 'ArrowDown' && direction !== 'up') direction = 'down';
-    if (key === 'ArrowLeft' && direction !== 'right') direction = 'left';
-    if (key === 'ArrowRight' && direction !== 'left') direction = 'right';
+    if (key === 'w' && direction !== 'down') direction = 'up';
+    if (key === 's' && direction !== 'up') direction = 'down';
+    if (key === 'a' && direction !== 'right') direction = 'left';
+    if (key === 'd' && direction !== 'left') direction = 'right';
 }
 let gameover=false
 function gameLoop() {
