@@ -28,11 +28,12 @@ function gameLoop() {
         gameover=true
     }
 
+    let newBody = {x: snake[0].x,y:snake[0].y};
     moveSnake();
     if (checkFoodCollision()) {
         score++;
         document.getElementById("score").innerHTML=score
-
+        snake.push(newBody)
         placeFood();
     }
 
@@ -87,7 +88,9 @@ function clearCanvas() {
 function drawSnake() {
     ctx.fillStyle = 'green';
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillRect(snake[i].x, snake[i].y, gridSize, gridSize);
+        ctx.fillRect(snake[i].x, snake[i].y, gridSize-2, gridSize-2);
+        ctx.strokeStyle ="white";
+        ctx.stroke()
     }
 }
 
