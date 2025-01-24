@@ -7,7 +7,7 @@ const baat_width=75
 let score=0
 let vunnet=false
 let count=0
-let a = false
+let a= false
 let w= false
 let d=false
 let s=false
@@ -45,7 +45,6 @@ window.onkeyup=function(event){
 function right(){
     if (baat_x<canvas.width){
         baat_x+=5
-        
     }
 }
 function Left(){
