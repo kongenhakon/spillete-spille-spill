@@ -42,21 +42,42 @@ window.onkeyup=function(event){
         w=false
     }
 }
-
-function moveShip(){
-
+function right(){
     if (baat_x<canvas.width && d){
         baat_x+=5
         
     }
-    if(a &&baat_x>0){
+}
+function Left(){
+    if(baat_x>0){
         baat_x-=5
     }
-    if(s && baat_y<canvas.height){
-        baat_y+=5
-    }
+}
+function up(){
     if(w && baat_y>0){
         baat_y-=5
+    }
+}
+function down(){
+    if(baat_y<canvas.height){
+        baat_y+=5
+    }
+}
+
+function moveShip(){
+
+    if (d){
+        right()
+        
+    }
+    if(a ){
+        Left()
+    }
+    if(s){
+        down()
+    }
+    if(w){
+        up()
     }
    
 }
