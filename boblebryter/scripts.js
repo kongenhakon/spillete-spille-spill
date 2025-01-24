@@ -42,41 +42,20 @@ window.onkeyup=function(event){
         w=false
     }
 }
-function right(){
-    if (baat_x<canvas.width){
-        baat_x+=5
-    }
-}
-function Left(){
-    if(baat_x>0){
-        baat_x-=5
-    }
-}
-function up(){
-    if(baat_y>0){
-        baat_y-=5
-    }
-}
-function down(){
-    if(baat_y<canvas.height){
-        baat_y+=5
-    }
-}
 
 function moveShip(){
 
-    if (d){
-        right()
-        
+    if (baat_x<canvas.width && d){
+        baat_x+=5
     }
-    if(a ){
-        Left()
+    if(a &&baat_x>0){
+        baat_x-=5
     }
-    if(s){
-        down()
+    if(s && baat_y<canvas.height){
+        baat_y+=5
     }
-    if(w){
-        up()
+    if(w && baat_y>0){
+        baat_y-=5
     }
    
 }
