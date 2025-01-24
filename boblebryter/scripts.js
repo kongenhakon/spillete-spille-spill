@@ -43,7 +43,7 @@ window.onkeyup=function(event){
     }
 }
 function right(){
-    if (baat_x<canvas.width && d){
+    if (baat_x<canvas.width){
         baat_x+=5
         
     }
@@ -54,7 +54,7 @@ function Left(){
     }
 }
 function up(){
-    if(w && baat_y>0){
+    if(baat_y>0){
         baat_y-=5
     }
 }
