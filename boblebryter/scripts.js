@@ -45,17 +45,17 @@ window.onkeyup=function(event){
 
 function moveShip(){
 
-    if (d){
+    if (baat_x<canvas.width && d){
         baat_x+=5
         
     }
-    if(a){
+    if(a &&baat_x>0){
         baat_x-=5
     }
-    if(s){
+    if(s && baat_y<canvas.height){
         baat_y+=5
     }
-    if(w){
+    if(w && baat_y>0){
         baat_y-=5
     }
    
