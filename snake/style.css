@@ -11,3 +11,20 @@ body {
 canvas {
     border: 1px solid black;
 }
+body {
+    margin: 0;
+    color: cadetblue;
+    font-family: fantasy;
+}
+.meny {
+    padding: 1rem;
+    background-color: honeydew;
+
+}
+.meny a{
+    margin-right: 2rem;
+    color: maroon;
+}
+.meny a:hover {
+    color: green;
+}
