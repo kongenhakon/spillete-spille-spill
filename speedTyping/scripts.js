@@ -27,12 +27,11 @@ function typingSpeedTest(words) {
     });
 
     inputField.addEventListener('input', () => {
-        if (inputField.value ===words.join(" ")) {
+        if (inputField.value.toLowerCase() ===words.join(" ")) {
             const endTime = performance.now();
             const startTime = parseFloat(inputField.dataset.startTime);
             const timeTaken = (endTime - startTime) / 1000; // Convert to seconds
             const wordsPerSecond = words.length / timeTaken;
-
             result.textContent = `Great! You typed the word correctly in ${timeTaken.toFixed(2)} seconds. Your typing speed is ${(wordsPerSecond*60).toFixed(2)} words per min.`;
             inputField.disabled = true;
         }
