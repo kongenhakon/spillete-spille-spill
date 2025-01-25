@@ -1,6 +1,6 @@
 
 function hentOrd(antallOrd){
-    const ord = "is a because fun hacker in a toilet with out you are did kind sister mom has need feel remember memory an".split(" ")
+    const ord = "is a because fun hacker in a toilet with out you are how they this kill criminal dad does do follow me weard did kind sister mom has need feel remember memory an".split(" ")
     console.log(ord)
     let valgteord=[]
     //console.log(valgteord)
