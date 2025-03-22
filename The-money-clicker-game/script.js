@@ -13,9 +13,9 @@ function scoreFun(){
 }
 function bitCoin(){
     
-    bitcoin=bitcoin+Math.floor(Math.random()*21);
+    bitcoin=bitcoin+Math.floor(Math.random()*101);
     
-    bitcoin=bitcoin-5
+    bitcoin=bitcoin-40
 
     
 }
@@ -29,7 +29,15 @@ function autoClick(){
         cost_auto*=2
     }
 }
-
+function sell_all(){
+    score=score+bit_amout*bitcoin
+    bit_amout=0
+}
+function buy_all(){
+    while (score>bitcoin){
+        buyBit()
+    }
+}
 function buyBit(){
     if (score>bitcoin){
         score=score-bitcoin
