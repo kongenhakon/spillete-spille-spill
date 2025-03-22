@@ -15,7 +15,7 @@ function bitCoin(){
     
     bitcoin=bitcoin+Math.floor(Math.random()*21);
     
-    bitcoin=bitcoin-8
+    bitcoin=bitcoin-5
 
     
 }
