@@ -21,9 +21,6 @@ function autoClick(){
     
 }
 function boben(){
-    if(score<cost){ 
-        alert ("du har ikke nok money")
-    }
     if (score>(cost-1)){
         bob=bob+cost/10
         score=score-cost
