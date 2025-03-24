@@ -13,9 +13,10 @@ function scoreFun(){
 }
 function bitCoin(){
     
-    bitcoin=bitcoin+Math.floor(Math.random()*101);
+    bitcoin=bitcoin+Math.floor(Math.random()*101)+bit_amout/2
     
-    bitcoin=bitcoin-40
+    bitcoin=bitcoin-bit_amout/3
+    bitcoin=Math.floor(bitcoin)
 
     
 }
