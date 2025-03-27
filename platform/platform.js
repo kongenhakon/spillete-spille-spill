@@ -1,6 +1,7 @@
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
 
+let best_score
 let sceneIndex = 0; // Nivå indikator
 let nivåer = []; // Array for nivåer
 let direction_m = true;
@@ -685,7 +686,12 @@ function oppdater() {
                 karakter.y = canvas.height - 60;
                 karakter.sjekkpunkt = null;
                 level = sceneIndex + 1;
-
+                best_score=localStorage.getItem("best_level")
+                if (level>best_score){
+                    best_score=level
+                }
+                localStorage.setItem("best_level", best_score)
+                document.getElementById("best_lev").innerHTML="Din beste level   :   "+best_score
                 visMelding(".........level: " + level);
             } else {
                 visMelding(".........Du har fullført spillet!");
