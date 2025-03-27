@@ -1,7 +1,7 @@
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
 
-let best_score
+let best_score;
 let sceneIndex = 0; // Nivå indikator
 let nivåer = []; // Array for nivåer
 let direction_m = true;
@@ -558,7 +558,16 @@ function lagNivå() {
     }
     ]
 }
-
+function reset_Best(){
+    
+    localStorage.clear("best_level")
+    if(best_score>0){
+        document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/37"
+    }
+    else{
+        document.getElementById("best_lev").innerHTML="Din beste level:   "+"1/37"
+    }
+}
 nivåer = lagNivå();
 
 let karakter = {
@@ -691,7 +700,7 @@ function oppdater() {
                     best_score=level
                 }
                 localStorage.setItem("best_level", best_score)
-                document.getElementById("best_lev").innerHTML="Din beste level   :   "+best_score+"/37"
+                document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/37"
                 visMelding(".........level: " + level);
             } else {
                 visMelding(".........Du har fullført spillet!");
@@ -701,7 +710,7 @@ function oppdater() {
             visMelding(".........Sjekkpunkt ikke aktivert! Kan ikke gå videre.");
         }
     }
-
+    
     if (karakter.y + karakter.height >= canvas.height) {
         karakter.y = canvas.height - karakter.height;
         karakter.velocityY = 0;
