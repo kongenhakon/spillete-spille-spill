@@ -691,7 +691,7 @@ function oppdater() {
                     best_score=level
                 }
                 localStorage.setItem("best_level", best_score)
-                document.getElementById("best_lev").innerHTML="Din beste level   :   "+best_score
+                document.getElementById("best_lev").innerHTML="Din beste level   :   "+best_score+"/37"
                 visMelding(".........level: " + level);
             } else {
                 visMelding(".........Du har fullført spillet!");
