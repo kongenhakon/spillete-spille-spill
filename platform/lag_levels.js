@@ -1,4 +1,4 @@
-export function lagNivå() {
+function lagNivå() {
     
     return[
         {

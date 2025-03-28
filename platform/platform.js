@@ -1,5 +1,5 @@
 
-import { lagNivå } from "./lag_levels.js";
+
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
 
