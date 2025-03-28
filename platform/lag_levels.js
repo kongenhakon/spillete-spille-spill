@@ -3,6 +3,15 @@ export function lagNivå() {
     return[
         {
             plattformer: [
+                
+            ],
+            sjekkpunkter: [
+                { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
+            ],
+            motstandere: []
+        },
+        {
+            plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
                 { x: 200, y: canvas.height - 100, width: 100, height: 20 },
                 { x: 400, y: canvas.height - 200, width: 100, height: 20 },
