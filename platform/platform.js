@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
-let best_score;
+let best_score=localStorage.getItem("best_level");
 let sceneIndex = 0; // Nivå indikator
 let nivåer = []; // Array for nivåer
 let direction_m = true;
