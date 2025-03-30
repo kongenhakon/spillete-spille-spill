@@ -446,6 +446,10 @@ function lagNivå() {
     }
     ]
 }
+function reset_best(){
+    best_score=0
+    localStorage.clear("beste_level")
+}
 nivåer = lagNivå();
 
 let karakter = {
