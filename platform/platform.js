@@ -1,7 +1,6 @@
 
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
-localStorage.setItem("beste_level", best_score)
 let best_score;
 let sceneIndex = 0; // Nivå indikator
 let nivåer = []; // Array for nivåer
@@ -449,6 +448,7 @@ function lagNivå() {
 function reset_Best(){
     best_score=0
     localStorage.clear("beste_level")
+    localStorage.setItem("beste_level", best_score)
 }
 nivåer = lagNivå();
 
