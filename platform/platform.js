@@ -612,8 +612,10 @@ function oppdater() {
 
     for (let motstander of nåværendeNivå.motstandere) {
         if (motstander.alive) {
-            ctx.fillStyle = 'purple';
-            ctx.fillRect(motstander.x, motstander.y, motstander.width, motstander.height);
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(motstander.x, motstander.y, motstander.width, canvas.height);
+            
+
         }
     }
 
