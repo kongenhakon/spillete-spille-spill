@@ -11,6 +11,7 @@ let spillAktivt = true; // Variabel for å sjekke om spillet er aktivt
 function lagNivå() {
     
     return[
+        
         //1
         {
             plattformer: [
@@ -457,6 +458,224 @@ function lagNivå() {
             { x: 350, y: canvas.height - 180, width: 40, height: 60, alive: true },
             { x: 500, y: canvas.height - 300, width: 40, height: 60, alive: true }
         ]
+    },
+    //31
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 100, width: canvas.width / 3, height: 20 },
+            { x: (canvas.width / 3) * 2, y: canvas.height - 200, width: canvas.width / 3, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width - 50, y: canvas.height - 220, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2, y: canvas.height - 150, width: 40, height: 60, alive: true }
+        ]
+    },
+    //32
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: 200, y: canvas.height - 150, width: 150, height: 20 },
+            { x: 450, y: canvas.height - 300, width: 100, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: 470, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: 300, y: canvas.height - 50, width: 40, height: 60, alive: true }
+        ]
+    },
+    //33
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 4, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 100, width: canvas.width / 2, height: 20 },
+            { x: (canvas.width / 4) * 3, y: canvas.height - 200, width: canvas.width / 4, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width - 100, y: canvas.height - 220, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: []
+    },
+    //34
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 100, width: canvas.width / 4, height: 20 },
+            { x: canvas.width / 2 + 150, y: canvas.height - 200, width: canvas.width / 4, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width - 70, y: canvas.height - 220, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: 100, y: canvas.height - 50, width: 40, height: 60, alive: true }
+        ]
+    },
+    //35
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 120, width: canvas.width / 3, height: 20 },
+            { x: (canvas.width / 3) * 2, y: canvas.height - 240, width: canvas.width / 3, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 260, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: 200, y: canvas.height - 80, width: 40, height: 60, alive: true }
+        ]
+    },
+    //36
+    {
+        plattformer: [
+            { x: canvas.width / 4, y: canvas.height - 20, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 100, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 2.5, y: canvas.height - 200, width: canvas.width / 5, height: 20 },
+            { x: canvas.width / 2.3, y: canvas.height - 300, width: canvas.width / 6, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2, y: canvas.height - 150, width: 40, height: 60, alive: true }
+        ]
+    },
+    //37
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 100, width: canvas.width / 3, height: 20 },
+            { x: (canvas.width / 3) * 2, y: canvas.height - 180, width: canvas.width / 3, height: 20 },
+            { x: 0, y: canvas.height - 260, width: canvas.width / 3, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 280, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 4, y: canvas.height - 120, width: 40, height: 60, alive: true }
+        ]
+    },
+    //38
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 80, width: canvas.width / 2, height: 20 },
+            { x: 0, y: canvas.height - 160, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 240, width: canvas.width / 2, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width - 50, y: canvas.height - 260, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2 - 100, y: canvas.height - 140, width: 40, height: 60, alive: true }
+        ]
+    },
+    //39
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 120, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 220, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 2.5, y: canvas.height - 320, width: canvas.width / 5, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 340, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2, y: canvas.height - 250, width: 40, height: 60, alive: true }
+        ]
+    },
+    //40
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 120, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 220, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 320, width: canvas.width / 4, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2 + 50, y: canvas.height - 340, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 60, alive: true }
+        ]
+    },
+    //41
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 120, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 220, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 320, width: canvas.width / 4, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2 + 50, y: canvas.height - 340, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 50, alive: true } // Plassert på nivå 2 for utfordring
+        ]
+    },
+    //42
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 100, width: canvas.width / 3, height: 20 },
+            { x: (canvas.width / 3) * 2, y: canvas.height - 180, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 260, width: canvas.width / 2, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 280, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 3, y: canvas.height - 120, width: 40, height: 50, alive: true } // Angriper fra høyre
+        ]
+    },
+    //43
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 80, width: canvas.width / 2, height: 20 },
+            { x: 0, y: canvas.height - 160, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 2, y: canvas.height - 240, width: canvas.width / 2, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width - 50, y: canvas.height - 260, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2, y: canvas.height - 140, width: 40, height: 50, alive: true } // Utfordring i midten av nivået
+        ]
+    },
+    //44
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 150, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 260, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 2.5, y: canvas.height - 370, width: canvas.width / 5, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 390, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 2, y: canvas.height - 250, width: 40, height: 50, alive: true } // Vanskelig å unngå
+        ]
+    },
+    //45
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: canvas.width / 3, y: canvas.height - 120, width: canvas.width / 3, height: 20 },
+            { x: canvas.width / 4, y: canvas.height - 220, width: canvas.width / 2, height: 20 },
+            { x: canvas.width / 5, y: canvas.height - 320, width: canvas.width / 2, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: canvas.width / 2, y: canvas.height - 340, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere: [
+            { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 50, alive:true}
+        ]
     }
     ]
 }
@@ -598,7 +817,7 @@ function oppdater() {
                     best_score=level
                 }
                 localStorage.setItem("best_level", best_score)
-                document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/30"
+                document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/45"
                 visMelding(".........level: " + level);
             } else {
                 visMelding(".........Du har fullført spillet!");
