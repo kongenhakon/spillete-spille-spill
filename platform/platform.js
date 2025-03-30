@@ -461,7 +461,7 @@ function lagNivå() {
     ]
 }
 function reset_Best(){
-    best_score=0
+    best_score=1
     localStorage.clear("beste_level")
     localStorage.setItem("beste_level", best_score)
 }
