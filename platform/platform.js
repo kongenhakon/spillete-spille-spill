@@ -564,7 +564,7 @@ function oppdater() {
             }
         }
     }
-
+    
     if (karakter.x >= canvas.width) {
         visMelding(".........Forsøker å gå til neste nivå...");
         if (karakter.sjekkpunkt && karakter.sjekkpunkt.aktiveres) {
