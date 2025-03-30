@@ -14,7 +14,7 @@ function lagNivå() {
     return[
         {
             plattformer: [
-                
+                { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 }
             ],
             sjekkpunkter: [
                 { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
