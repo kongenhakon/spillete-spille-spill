@@ -495,7 +495,8 @@ function oppdater() {
         visMelding(".........Spillet er over!");
         return; // Stopp spill-loopen
     }
-
+    document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/30"
+    visMelding(".........level: " + level);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     karakter.x += karakter.direction * karakter.speed;
