@@ -268,7 +268,7 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 300, y: 380, width: 40, height: 60, alive: true },
-                { x: 750, y: 120, width: 40, height: 60, alive: true }
+                { x: 500, y: 120, width: 40, height: 60, alive: true }
             ]
         },
          //19
