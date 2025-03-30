@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
-
+localStorage.setItem("beste_level", best_score)
 let best_score;
 let sceneIndex = 0; // Nivå indikator
 let nivåer = []; // Array for nivåer
@@ -458,9 +458,9 @@ let karakter = {
     width: 40,
     height: 50,
     velocityY: 0,
-    gravity: 0.35,
+    gravity: 0.30,
     isJumping: false,
-    speed: 7,
+    speed: 8,
     sjekkpunkt: null,
     direction: 0
 };
