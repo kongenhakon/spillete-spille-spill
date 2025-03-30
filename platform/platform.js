@@ -11,6 +11,7 @@ let spillAktivt = true; // Variabel for å sjekke om spillet er aktivt
 function lagNivå() {
     
     return[
+        //1
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 }
@@ -20,6 +21,7 @@ function lagNivå() {
             ],
             motstandere: []
         },
+        //2
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -32,6 +34,7 @@ function lagNivå() {
             ],
             motstandere: []
         },
+        //3
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -43,7 +46,7 @@ function lagNivå() {
             ],
             motstandere: []
         },
-        // Trinnvise økninger i vanskelighetsgrad
+        //4
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -57,6 +60,7 @@ function lagNivå() {
                 { x: 300, y: canvas.height - 250, width: 40, height: 60, alive: true }
             ]
         },
+        //5
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -68,7 +72,7 @@ function lagNivå() {
             ],
             motstandere: []
         },
-        // Nivå 6-10: Trapper og hinderløype
+        //6
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -78,12 +82,13 @@ function lagNivå() {
                 { x: 750, y: canvas.height - 250, width: 100, height: 20 }
             ],
             sjekkpunkter: [
-                { x: 800, y: canvas.height - 270, width: 10, height: 10, aktiveres: false }
+                { x: 780, y: canvas.height - 270, width: 10, height: 10, aktiveres: false }
             ],
             motstandere: [
                 { x: 300, y: canvas.height - 50, width: 40, height: 60, alive: true }
             ]
         },
+        //7
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -98,6 +103,7 @@ function lagNivå() {
                 { x: 300, y: canvas.height - 60, width: 40, height: 60, alive: true }
             ]
         },
+        //8
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -111,6 +117,7 @@ function lagNivå() {
                 { x: 350, y: canvas.height - 100, width: 40, height: 60, alive: true }
             ]
         },
+        //9
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -126,6 +133,7 @@ function lagNivå() {
                 { x: 350, y: canvas.height - 140, width: 40, height: 60, alive: true }
             ]
         },
+        //10
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -137,6 +145,7 @@ function lagNivå() {
             ],
             motstandere: []
         },
+        //11
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -151,6 +160,7 @@ function lagNivå() {
                 { x: 400, y: canvas.height - 100, width: 40, height: 60, alive: true }
             ]
         },
+        //12
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -165,6 +175,7 @@ function lagNivå() {
                 { x: 400, y: canvas.height - 200, width: 40, height: 60, alive: true }
             ]
         },
+        //13
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -180,6 +191,7 @@ function lagNivå() {
                 { x: 450, y: canvas.height - 270, width: 40, height: 60, alive: true }
             ]
         },
+        //14
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -195,6 +207,7 @@ function lagNivå() {
                 { x: 600, y: 220, width: 40, height: 60, alive: true }
             ]
         },
+        //15
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -210,6 +223,7 @@ function lagNivå() {
                 { x: 500, y: 170, width: 40, height: 60, alive: true }
             ]
         },
+        //16
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -225,6 +239,7 @@ function lagNivå() {
                 { x: 650, y: 170, width: 40, height: 60, alive: true }
             ]
         },
+        //17
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -239,6 +254,7 @@ function lagNivå() {
                 { x: 400, y: canvas.height - 200, width: 40, height: 60, alive: true }
             ]
         },
+        //18
         {
             plattformer: [
                 { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -248,14 +264,14 @@ function lagNivå() {
                 { x: 850, y: 100, width: 150, height: 20 }
             ],
             sjekkpunkter: [
-                { x: 900, y: 80, width: 10, height: 10, aktiveres: false }
+                { x: 780, y: 80, width: 10, height: 10, aktiveres: false }
             ],
             motstandere: [
                 { x: 300, y: 380, width: 40, height: 60, alive: true },
                 { x: 750, y: 120, width: 40, height: 60, alive: true }
             ]
         },
-         // Morsomt nivå 1: Spiral
+         //19
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -271,7 +287,7 @@ function lagNivå() {
             { x: 600, y: canvas.height - 300, width: 40, height: 60, alive: true }
         ]
     },
-    // Vanskelig nivå 2: Hinderløype
+    //20
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -287,7 +303,7 @@ function lagNivå() {
             { x: 350, y: 350, width: 40, height: 60, alive: true }
         ]
     },
-    // Morsomt nivå 3: Tårn
+    //21
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -300,7 +316,7 @@ function lagNivå() {
         ],
         motstandere: []
     },
-    // Vanskelig nivå 4: Gjennombrudd
+    //22
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -315,7 +331,7 @@ function lagNivå() {
             { x: 300, y: canvas.height - 100, width: 40, height: 60, alive: true }
         ]
     },
-    // Morsomt nivå 5: Bølge
+    //23
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width / 2, height: 20 },
@@ -330,8 +346,7 @@ function lagNivå() {
             { x: canvas.width / 2 - 50, y: canvas.height - 100, width: 40, height: 60, alive: true }
         ]
     },
-    
-    // Morsomt nivå 6: Zigzag
+    //24
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -347,7 +362,7 @@ function lagNivå() {
             { x: 400, y: canvas.height - 180, width: 40, height: 60, alive: true }
         ]
     },
-    // Vanskelig nivå 7: Hopp over hinder
+    //25
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -356,14 +371,14 @@ function lagNivå() {
             { x: 750, y: canvas.height - 300, width: 100, height: 20 }
         ],
         sjekkpunkter: [
-            { x: 800, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
+            { x: 780, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
         ],
         motstandere: [
             { x: 300, y: canvas.height - 100, width: 40, height: 60, alive: true },
             { x: 600, y: canvas.height - 220, width: 40, height: 60, alive: true }
         ]
     },
-    // Morsomt nivå 8: Plattformklynge
+    //26
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -380,7 +395,7 @@ function lagNivå() {
             { x: 600, y: canvas.height - 160, width: 40, height: 60, alive: true }
         ]
     },
-    // Vanskelig nivå 9: Spiraltrapp
+    //27
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -396,7 +411,7 @@ function lagNivå() {
             { x: 450, y: canvas.height - 220, width: 40, height: 60, alive: true }
         ]
     },
-    // Morsomt nivå 10: Trapper med smale plattformer
+    //28
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
@@ -412,7 +427,7 @@ function lagNivå() {
             { x: 300, y: canvas.height - 270, width: 40, height: 60, alive: true }
         ]
     },
-    // Vanskelig nivå 11: Plattformkaos
+    //29
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: 200, height: 20 },
@@ -427,7 +442,7 @@ function lagNivå() {
             { x: 350, y: canvas.height - 100, width: 40, height: 60, alive: true }
         ]
     },
-    // Vanskelig nivå 12: Hinder med sjekkpunkt
+    //30
     {
         plattformer: [
             { x: 0, y: canvas.height - 20, width: 200, height: 20 },
