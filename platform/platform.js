@@ -11,7 +11,25 @@ let spillAktivt = true; // Variabel for å sjekke om spillet er aktivt
 function lagNivå() {
     
     return[
-        
+        {
+            plattformer: [
+                { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+                { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+                { x: 200, y: canvas.height - 100, width: 100, height: 20 },
+                { x: 400, y: canvas.height - 200, width: 100, height: 20 },
+                { x: 600, y: canvas.height - 300, width: 100, height: 20 }
+            ],
+            sjekkpunkter: [
+                { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
+            ],
+            motstandere:[
+                { x: 340, y: canvas.height - 250, width: 40, height: 60, alive: true }
+            ],
+            motstandere2: [
+                { x: 300, y: canvas.height - 225, width: 40, height: 60, alive: true },
+                { x: 380, y: canvas.height - 225, width: 40, height: 60, alive: true }
+            ]
+        },
         //1
         {
             plattformer: [
@@ -20,7 +38,9 @@ function lagNivå() {
             sjekkpunkter: [
                 { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
             ],
-            motstandere: []
+            motstandere: [],
+            motstandere2: []
+
         },
         //2
         {
@@ -33,7 +53,8 @@ function lagNivå() {
             sjekkpunkter: [
                 { x: 450, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
             ],
-            motstandere: []
+            motstandere: [],
+            motstandere2: []
         },
         //3
         {
@@ -45,7 +66,8 @@ function lagNivå() {
             sjekkpunkter: [
                 { x: 400, y: canvas.height - 270, width: 10, height: 10, aktiveres: false }
             ],
-            motstandere: []
+            motstandere: [],
+            motstandere2: []
         },
         //4
         {
@@ -59,7 +81,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 300, y: canvas.height - 250, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //5
         {
@@ -71,7 +94,8 @@ function lagNivå() {
             sjekkpunkter: [
                 { x: 450, y: canvas.height - 240, width: 10, height: 10, aktiveres: false }
             ],
-            motstandere: []
+            motstandere: [],
+            motstandere2: []
         },
         //6
         {
@@ -87,7 +111,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 300, y: canvas.height - 50, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //7
         {
@@ -102,7 +127,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 300, y: canvas.height - 60, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //8
         {
@@ -116,7 +142,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 350, y: canvas.height - 100, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //9
         {
@@ -132,7 +159,8 @@ function lagNivå() {
             motstandere: [
                 { x: 200, y: canvas.height - 60, width: 40, height: 60, alive: true },
                 { x: 350, y: canvas.height - 140, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //10
         {
@@ -144,7 +172,8 @@ function lagNivå() {
             sjekkpunkter: [
                 { x: 350, y: canvas.height - 240, width: 10, height: 10, aktiveres: false }
             ],
-            motstandere: []
+            motstandere: [],
+            motstandere2: []
         },
         //11
         {
@@ -159,7 +188,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 400, y: canvas.height - 100, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //12
         {
@@ -174,7 +204,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 400, y: canvas.height - 200, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //13
         {
@@ -190,7 +221,8 @@ function lagNivå() {
             motstandere: [
                 { x: 250, y: canvas.height - 170, width: 40, height: 60, alive: true },
                 { x: 450, y: canvas.height - 270, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //14
         {
@@ -206,7 +238,8 @@ function lagNivå() {
             motstandere: [
                 { x: 350, y: 280, width: 40, height: 60, alive: true },
                 { x: 600, y: 220, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //15
         {
@@ -222,7 +255,8 @@ function lagNivå() {
             motstandere: [
                 { x: 250, y: 270, width: 40, height: 60, alive: true },
                 { x: 500, y: 170, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //16
         {
@@ -238,7 +272,8 @@ function lagNivå() {
             motstandere: [
                 { x: 300, y: 370, width: 40, height: 60, alive: true },
                 { x: 650, y: 170, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //17
         {
@@ -253,7 +288,8 @@ function lagNivå() {
             ],
             motstandere: [
                 { x: 400, y: canvas.height - 200, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
         //18
         {
@@ -270,7 +306,8 @@ function lagNivå() {
             motstandere: [
                 { x: 300, y: 380, width: 40, height: 60, alive: true },
                 { x: 500, y: 120, width: 40, height: 60, alive: true }
-            ]
+            ],
+            motstandere2: []
         },
          //19
     {
@@ -286,7 +323,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 600, y: canvas.height - 300, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //20
     {
@@ -302,7 +340,8 @@ function lagNivå() {
         motstandere: [
             { x: 500, y: 250, width: 40, height: 60, alive: true },
             { x: 350, y: 350, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //21
     {
@@ -315,7 +354,8 @@ function lagNivå() {
         sjekkpunkter: [
             { x: 170, y: canvas.height - 320, width: 10, height: 10, aktiveres: false }
         ],
-        motstandere: []
+        motstandere: [],
+        motstandere2: []
     },
     //22
     {
@@ -330,7 +370,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 300, y: canvas.height - 100, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //23
     {
@@ -345,7 +386,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2 - 50, y: canvas.height - 100, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //24
     {
@@ -361,7 +403,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 400, y: canvas.height - 180, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //25
     {
@@ -377,7 +420,8 @@ function lagNivå() {
         motstandere: [
             { x: 300, y: canvas.height - 100, width: 40, height: 60, alive: true },
             { x: 600, y: canvas.height - 220, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //26
     {
@@ -394,7 +438,8 @@ function lagNivå() {
         motstandere: [
             { x: 200, y: canvas.height - 70, width: 40, height: 60, alive: true },
             { x: 600, y: canvas.height - 160, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //27
     {
@@ -410,7 +455,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 450, y: canvas.height - 220, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //28
     {
@@ -426,7 +472,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 300, y: canvas.height - 270, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //29
     {
@@ -441,7 +488,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 350, y: canvas.height - 100, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //30
     {
@@ -457,7 +505,8 @@ function lagNivå() {
         motstandere: [
             { x: 350, y: canvas.height - 180, width: 40, height: 60, alive: true },
             { x: 500, y: canvas.height - 300, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //31
     {
@@ -471,7 +520,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2, y: canvas.height - 150, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //32
     {
@@ -485,7 +535,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 300, y: canvas.height - 50, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //33
     {
@@ -497,7 +548,8 @@ function lagNivå() {
         sjekkpunkter: [
             { x: canvas.width - 100, y: canvas.height - 220, width: 10, height: 10, aktiveres: false }
         ],
-        motstandere: []
+        motstandere: [],
+        motstandere2: []
     },
     //34
     {
@@ -511,7 +563,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 100, y: canvas.height - 50, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //35
     {
@@ -525,7 +578,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: 200, y: canvas.height - 80, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //36
     {
@@ -540,7 +594,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2, y: canvas.height - 150, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //37
     {
@@ -555,7 +610,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 4, y: canvas.height - 120, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //38
     {
@@ -570,7 +626,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2 - 100, y: canvas.height - 140, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //39
     {
@@ -585,7 +642,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2, y: canvas.height - 250, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //40
     {
@@ -600,7 +658,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 60, alive: true }
-        ]
+        ],
+        motstandere2: []
     },
     //41
     {
@@ -615,7 +674,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 50, alive: true } // Plassert på nivå 2 for utfordring
-        ]
+        ],
+        motstandere2: []
     },
     //42
     {
@@ -630,7 +690,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 3, y: canvas.height - 120, width: 40, height: 50, alive: true } // Angriper fra høyre
-        ]
+        ],
+        motstandere2: []
     },
     //43
     {
@@ -645,7 +706,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2, y: canvas.height - 140, width: 40, height: 50, alive: true } // Utfordring i midten av nivået
-        ]
+        ],
+        motstandere2: []
     },
     //44
     {
@@ -660,7 +722,8 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 2, y: canvas.height - 250, width: 40, height: 50, alive: true } // Vanskelig å unngå
-        ]
+        ],
+        motstandere2: []
     },
     //45
     {
@@ -675,6 +738,27 @@ function lagNivå() {
         ],
         motstandere: [
             { x: canvas.width / 4, y: canvas.height - 150, width: 40, height: 50, alive:true}
+        ],
+        motstandere2: []
+    },
+    //46
+    {
+        plattformer: [
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
+            { x: 200, y: canvas.height - 100, width: 100, height: 20 },
+            { x: 400, y: canvas.height - 200, width: 100, height: 20 },
+            { x: 600, y: canvas.height - 300, width: 100, height: 20 }
+        ],
+        sjekkpunkter: [
+            { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
+        ],
+        motstandere:[
+            { x: 340, y: canvas.height - 250, width: 40, height: 60, alive: true }
+        ],
+        motstandere2: [
+            { x: 300, y: canvas.height - 225, width: 40, height: 60, alive: true },
+            { x: 380, y: canvas.height - 225, width: 40, height: 60, alive: true }
         ]
     }
     ]
@@ -692,9 +776,9 @@ let karakter = {
     width: 40,
     height: 50,
     velocityY: 0,
-    gravity: 0.30,
+    gravity: 0.35,
     isJumping: false,
-    speed: 8,
+    speed: 7,
     sjekkpunkt: null,
     direction: 0
 };
@@ -729,7 +813,7 @@ function oppdater() {
         visMelding(".........Spillet er over!");
         return; // Stopp spill-loopen
     }
-    document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/30"
+    document.getElementById("best_lev").innerHTML="Din beste level:   "+best_score+"/46"
     visMelding(".........level: " + level);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -765,7 +849,30 @@ function oppdater() {
             visMelding(".........Sjekkpunkt aktivert!");
         }
     }
+    for (let motstander of nåværendeNivå.motstandere2) {
+        if (motstander.alive) {
+            if (motstander.x < 0) {
+                direction_m = true;
+            } else if (motstander.x > canvas.width) {
+                direction_m = false;
+            }
+            if (direction_m) {
+                motstander.x += 1;
+            } else {
+                motstander.x -= 1;
+            }
+            if (karakter.x < motstander.x + motstander.width &&
+                karakter.x + karakter.width > motstander.x &&
+                karakter.y + karakter.height <= motstander.y + motstander.height &&
+                karakter.y + karakter.height + karakter.velocityY >= motstander.y) {
 
+                motstander.alive = false;
+                karakter.velocityY = -10;
+                visMelding(".........Motstander drept!");
+            }
+        
+        }
+    }
     for (let motstander of nåværendeNivå.motstandere) {
         if (motstander.alive) {
             if (motstander.x < 0) {
@@ -852,13 +959,20 @@ function oppdater() {
 
         }
     }
+    for (let motstander of nåværendeNivå.motstandere2) {
+        if (motstander.alive) {
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(motstander.x, motstander.y, motstander.width, motstander.height);
+            
+
+        }
+    }
 
     ctx.fillStyle = 'red';
     ctx.fillRect(karakter.x, karakter.y, karakter.width, karakter.height);
 
     requestAnimationFrame(oppdater);
+    
 }
 
-oppdater();
-
-
+oppdater()
