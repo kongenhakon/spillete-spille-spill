@@ -943,7 +943,7 @@ function oppdater() {
     }
     for (let motstander of nåværendeNivå.motstandere2) {
         if (motstander.alive) {
-            ctx.fillStyle = 'yellow';
+            ctx.fillStyle = 'green';
             ctx.fillRect(motstander.x, motstander.y, motstander.width, motstander.height);
             
 
