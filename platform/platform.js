@@ -11,25 +11,7 @@ let spillAktivt = true; // Variabel for å sjekke om spillet er aktivt
 function lagNivå() {
     
     return[
-        {
-            plattformer: [
-                { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
-                { x: 0, y: canvas.height - 20, width: canvas.width, height: 20 },
-                { x: 200, y: canvas.height - 100, width: 100, height: 20 },
-                { x: 400, y: canvas.height - 200, width: 100, height: 20 },
-                { x: 600, y: canvas.height - 300, width: 100, height: 20 }
-            ],
-            sjekkpunkter: [
-                { x: 450, y: 320, width: 10, height: 10, aktiveres: false }
-            ],
-            motstandere:[
-                { x: 340, y: canvas.height - 250, width: 40, height: 60, alive: true }
-            ],
-            motstandere2: [
-                { x: 300, y: canvas.height - 225, width: 40, height: 60, alive: true },
-                { x: 380, y: canvas.height - 225, width: 40, height: 60, alive: true }
-            ]
-        },
+        
         //1
         {
             plattformer: [
@@ -757,8 +739,8 @@ function lagNivå() {
             { x: 340, y: canvas.height - 250, width: 40, height: 60, alive: true }
         ],
         motstandere2: [
-            { x: 300, y: canvas.height - 225, width: 40, height: 60, alive: true },
-            { x: 380, y: canvas.height - 225, width: 40, height: 60, alive: true }
+            { x: 280, y: canvas.height - 225, width: 60, height: 40, alive: true },
+            { x: 380, y: canvas.height - 225, width: 60, height: 40, alive: true }
         ]
     }
     ]
