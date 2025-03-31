@@ -3,6 +3,7 @@ const canvas = document.getElementById('spillCanvas');
 const ctx = canvas.getContext('2d');
 let best_score=localStorage.getItem("best_level");
 let sceneIndex = 0; // Nivå indikator
+let boss=true;
 let nivåer = []; // Array for nivåer
 let direction_m = true;
 let level = 1;
@@ -873,6 +874,7 @@ function oppdater() {
                 karakter.y + karakter.height + karakter.velocityY >= motstander.y) {
 
                 motstander.alive = false;
+                boss=false
                 karakter.velocityY = -10;
                 visMelding(".........Motstander drept!");
             } else if (
@@ -943,7 +945,7 @@ function oppdater() {
     }
     for (let motstander of nåværendeNivå.motstandere2) {
         if (motstander.alive) {
-            ctx.fillStyle = 'green';
+            ctx.fillStyle = 'orange';
             ctx.fillRect(motstander.x, motstander.y, motstander.width, motstander.height);
             
 
